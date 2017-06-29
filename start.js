@@ -19,6 +19,9 @@ mongoose.connection.on('error', (err) => {
 
 // READY?! Let's go!
 
+// import the models - you only have to do this once, and mongo will remember
+require('./models/Store');
+require('./models/User');
 
 // Start our app!
 const app = require('./app');
